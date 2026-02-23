@@ -1,0 +1,790 @@
+/* *{
+  box-sizing:border-box
+  
+}
+
+body{
+  margin:0;font-family:Arial,sans-serif;
+background:#f4f6f8;
+  
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+}
+
+body {
+  background: rgb(241, 236, 236);
+  color: #f00707;
+}
+
+.login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(231, 222, 222);
+  border: 2px solid #ff6600;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px #ce9e77;
+}
+
+/* .p1 {
+  height: 300;
+  width: 100%;
+} */
+
+.login button {
+  padding: 8px 20px;
+  background: #f6f8f7;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header {
+  background: #eee7e7;
+  color: rgb(247, 8, 8);
+  padding: 25px;
+  text-align: center;
+}
+
+nav {
+  background: #eee7e7;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+nav a {
+  border-radius: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(243, 19, 19);
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #e20e0e;
+  color: #080202a2;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 6px;
+  animation: fadeIn 1s ease;
+}
+
+.about {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.b1{
+  width: 100%;
+  height: 500px;
+  
+   color: #e90a0a;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   font-display: block;
+}
+.ab { 
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.ab:hover {
+  transform: scale(1.05);
+}
+.price{
+  margin-top: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cards1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.card1{
+  height: 350px;
+  background-image: url(ani.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card1:hover {
+  transform: scale(1.05);
+}
+.card2{
+  height: 350px;
+  background-image: url(ani1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card2:hover {
+  transform: scale(1.05);
+}
+.card3{
+  height: 350px;
+  background-image: url(ani1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card3:hover {
+  transform: scale(1.05);
+}
+.card4 {
+  height: 350px;
+  background-image: url(images\ \(6\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+} 
+
+.card4:hover {
+  transform: scale(1.05);
+}
+.card5{
+ height: 350px;
+  background-image: url(img5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card5:hover {
+  transform: scale(1.05);
+}
+
+.card6 {
+  height: 350px;
+  background-image: url(images\ \(4\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card6:hover {
+  transform: scale(1.05);
+}
+.card7 {
+  height: 350px;
+  background-image: url(ani2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card7:hover {
+  transform: scale(1.05);
+}
+.card8 {
+  height: 350px;
+  background-image: url(ani10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card8:hover {
+  transform: scale(1.05);
+}
+.card9 {
+  height: 350px;
+  background-image: url(ani11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card9:hover {
+  transform: scale(1.05);
+}
+.card10{
+  height: 350px;
+  background-image: url(ani12.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card10:hover {
+  transform: scale(1.05);
+}
+.card11{
+ height: 350px;
+  background-image: url(ani14.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card11:hover {
+  transform: scale(1.05);
+}
+.card12{
+ height: 350px;
+  background-image: url(ani13.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card12:hover {
+  transform: scale(1.05);
+}
+.card13{
+ height: 350px;
+  background-image: url(ani15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card13:hover {
+  transform: scale(1.05);
+}
+.card14{
+  height: 350px;
+  background-image: url(ani15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.card14:hover {
+  transform: scale(1.05);
+}
+.card15{
+  height: 350px;
+  background-image: url(ani5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;}
+.card15:hover {
+  transform: scale(1.05);
+}
+.card16{
+  height: 350px;
+  background-image: url(ani2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;}
+.card16:hover {
+  transform: scale(1.05);
+}
+
+.card17{
+  height: 350px;
+  background-image: url(ani11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card17:hover {
+  transform: scale(1.05);
+}
+
+.card18{
+  height: 350px;
+  background-image: url(ani12.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;}
+.card18:hover {
+  transform: scale(1.05);
+}
+.card19{
+  height: 350px;
+  background-image: url(ani3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card19:hover {
+  transform: scale(1.05);
+}
+.card20{
+  height: 350px;
+  background-image: url(ani13.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;}
+.card20:hover {
+  transform: scale(1.05);
+}
+.card21{
+  height: 350px;
+  background-image: url(ani6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card21:hover {
+  transform: scale(1.05);
+}
+.card22{
+  height: 350px;
+  background-image: url(ani7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card22:hover {
+  transform: scale(1.05);
+}
+.card24{
+  height: 350px;
+  background-image: url(ani8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card24:hover {
+  transform: scale(1.05);
+}
+.card23{
+  height: 350px;
+  background-image: url(ani15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;}
+.card23:hover {
+  transform: scale(1.05);
+}
+.card25{
+  height: 350px;
+  background-image: url(ani10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card25:hover {
+  transform: scale(1.05);
+}
+.card26{
+  height: 350px;
+  background-image: url(ani1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card26:hover {
+  transform: scale(1.05);
+}
+.card27{
+  height: 350px;
+  background-image: url(ani14.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card27:hover {
+  transform: scale(1.05);
+}
+.card28{
+  background-image: url(images.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card28:hover {
+  transform: scale(1.05);
+}
+.card29{
+  height: 350px;
+  background-image: url(img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card29:hover {
+  transform: scale(1.05);
+}
+.card30{
+  height: 350px;
+  background-image: url(img10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card30:hover {
+  transform: scale(1.05);
+}
+.card31{
+  height: 350px;
+  background-image: url(img11.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card31:hover {
+  transform: scale(1.05);
+}
+.card32{
+  height: 350px;
+  background-image: url(img.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card32:hover {
+  transform: scale(1.05);
+}
+.card33{
+  height: 350px;
+  background-image: url(img12.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card33:hover {
+  transform: scale(1.05);
+}
+.card34{
+  height: 350px;
+  background-image: url(img15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card34:hover {
+  transform: scale(1.05);
+}
+.card35{
+  height: 350px;
+  background-image: url(img21.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card35:hover {
+  transform: scale(1.05);
+}
+.card36{ 
+  height: 350px;
+  background-image: url(ani15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;}
+.card36:hover {
+  transform: scale(1.05);
+}
+.card37{
+  height: 350px;
+  background-image: url(img19.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card37:hover {
+  transform: scale(1.05);
+}
+.card38{
+  height: 350px;
+  background-image: url(img10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card38:hover {
+  transform: scale(1.05);
+}
+.card39{
+  height: 350px;
+  background-image: url(images\ \(4\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card39:hover {
+  transform: scale(1.05);
+}
+.card40{
+  height: 350px;
+  background-image: url(img18.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card40:hover {
+  transform: scale(1.05);
+}
+.card41{
+  height: 350px;
+  background-image: url(goldpattern.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card41:hover {
+  transform: scale(1.05);
+}
+.price {
+  font: 1em sans-serif;
+  font-size: 24px;
+  color: #080101;
+}
+
+button {
+  background: #ece0e0;
+  color: rgb(233, 21, 21);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e90a0a;
+  color: #080101;
+}
+
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-weight: bold; */
+  color: black;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+footer {
+  background: #f3efef;
+  color: rgb(240, 7, 7);
+  text-align: center;
+  padding: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+img {
+  width: 15rem;
+  height: 15rem;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="javascript.js"></script>
+<script>
+(function(){emailjs.init("YOUR_PUBLIC_KEY");})();
+</script>
+</head>
+<body>
+
+<header><h1>Contact Us</h1></header>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="products.html">Products</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+</nav>
+
+<section style="max-width:500px;margin:auto;">
+<form onsubmit="sendEmail(event)">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>© SAMRAT Enterprice 2026</footer>
+</body>
+</html>
